@@ -1,0 +1,12 @@
+.add-panel {
+    width: auto;
+    display: flex;
+    height: 10;
+    margin-top: 10px;
+}
+
+.add-input {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+}

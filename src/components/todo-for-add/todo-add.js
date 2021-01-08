@@ -22,7 +22,7 @@ export default class TodoAdd extends Component {
                   onChange={this.handleChange}/>
           <button type="button"
                   className="btn btn-info"
-                  onClick={()=>{ if (this.state.value.length > 0) {this.props.onAddItem(this.state.value)}}}>Add to TodoList</button>
+                  onClick={()=>{ if (this.state.value.length > 0) {this.props.onAddItem(this.state.value); this.setState({value: ''})}}}>Add to TodoList</button>
       </div>
     );
   }
